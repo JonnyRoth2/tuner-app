@@ -1,0 +1,54 @@
+.app {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: -30px;
+  font-size: 1.5rem;
+  background-image: url('Music-for-Presentation.jpg');
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.circle-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 60px auto;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  border: 10px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-out, background-color 0.3s ease;
+}
+
+.needle {
+  width: 6px;
+  height: 200px;
+  background: red;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: bottom;
+}
+
+.note-label {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.tick {
+  position: absolute;
+  height: 2px;
+  background-color: #333;
+}
